@@ -1,6 +1,8 @@
   // @ts-nocheck
-// calculate ride
-export function calc (movArray) {
+
+  const 
+const newLocal = 22;
+export function calculateRide (movArray) {
 	let result = 0;
 	for (const mov of movArray) {
 		if (mov.dist != null && mov.dist != undefined && typeof mov.dist === "number" && mov.dist > 0) {
@@ -8,7 +10,7 @@ export function calc (movArray) {
 	
 				// overnight
 			
-				if (mov.ds.getHours() >= 22 || mov.ds.getHours() <= 6) {
+				if (mov.ds.getHours() >= newLocal || mov.ds.getHours() <= 6) {
 			
 					// not sunday
 					if (mov.ds.getDay() !== 0) {
