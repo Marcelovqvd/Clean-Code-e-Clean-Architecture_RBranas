@@ -1,9 +1,8 @@
-const rides = [{dist: 10, day: 2}, {dist: 5, day: 2}]
 
-export function Calc(movArray) {
-  for (const el of movArray) {
-    console.log(el.dist[0])
-  }
+export function Calc(movArray: any) {
+    const fare = movArray[0].dist;
+    return fare;
 }
 
-console.log('el.dist[0]')
+const rides = [{dist: 10, day: 2}, {dist: 5, day: 2}]
+Calc(rides)
